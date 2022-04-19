@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+
+	<h:head>
+		<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
+		<title>Formulário</title>
+	</h:head>
+
+	<body>
+	
+		<h:form>
+		
+			Valor 01: <h:inputText value = "#{pageBean.valor01}"/><br></br>
+			Valor 02: <h:inputText value = "#{pageBean.valor02}"/><br></br>
+			Valor 03: <h:inputText value = "#{pageBean.valor03}"/><br></br>
+			<h:commandButton value = "SOMAR" action = "#{pageBean.somar}"/>
+		
+		</h:form>
+	
+	</body>
+</html>
