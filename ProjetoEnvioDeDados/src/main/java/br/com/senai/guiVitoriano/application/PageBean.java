@@ -22,7 +22,7 @@ public class PageBean implements Serializable{
 		
 		flash.put("nomeDoUsuario", nome);
 		
-		return "result";
+		return "result?faces-redirect=true"; //?faces-redirect=true -> força o carregamento para a outra página
 		
 	}
 
