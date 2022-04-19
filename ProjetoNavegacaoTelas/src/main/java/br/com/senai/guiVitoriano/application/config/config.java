@@ -1,4 +1,4 @@
-package br.com.senai.willianFerreira.application.config;
+package br.com.senai.guiVitoriano.application.config;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.faces.annotation.FacesConfig;
