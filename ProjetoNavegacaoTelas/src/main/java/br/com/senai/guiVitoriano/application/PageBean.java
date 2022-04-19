@@ -1,4 +1,4 @@
-package br.com.senai.willianFerreira.application;
+package br.com.senai.guiVitoriano.application;
 
 
 import java.io.Serializable;
@@ -10,5 +10,7 @@ import javax.inject.Named;
 @RequestScoped
 
 public class PageBean implements Serializable {
-
+	
+	
+	
 }
