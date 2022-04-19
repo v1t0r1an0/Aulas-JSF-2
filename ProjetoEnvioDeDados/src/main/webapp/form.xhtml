@@ -9,12 +9,17 @@
 
 	<h:head>
 		<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
-		<title>Form</title>
+		<title>Formulário</title>
 	</h:head>
 
 	<body>
 	
-	
+		<h:form>
+		
+			Nome: <h:inputText value = "#{pageBean.nome}"/>
+			<h:commandButton value = "Processar" action = "#{pageBean.processar}"/>
+		
+		</h:form>
 	
 	</body>
 </html>
