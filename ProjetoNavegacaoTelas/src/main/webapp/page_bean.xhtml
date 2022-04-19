@@ -7,19 +7,17 @@
 	xmlns:jsf="http://xmlns.jcp.org/jsf"
 	lang="pt-br">
 
-<h:head>
-	<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
-	<title>Navegação</title>
-</h:head>
+	<h:head>
+		<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
+		<title>Navegação</title>
+	</h:head>
 
-<body>
-	<H1>Page Beans</H1>
-	
-		<h:form>
-		Página: <h:inputText value = "#{pageBean.page}"> </h:inputText>
-			<h:commandButton value = "Ir para a página" action = "#{pageBean.go_to}"></h:commandButton>		
-		</h:form>
-</body>
-
-	
+	<body>
+		<H1>Page Beans</H1>
+		
+			<h:form>
+			Página: <h:inputText value = "#{pageBean.page}"> </h:inputText>
+				<h:commandButton value = "Ir para a página" action = "#{pageBean.go_to}"></h:commandButton>		
+			</h:form>
+	</body>
 </html>

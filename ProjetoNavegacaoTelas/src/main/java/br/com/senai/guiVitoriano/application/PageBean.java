@@ -6,16 +6,11 @@ import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 
+@SuppressWarnings("serial")
 @Named
 @RequestScoped 
 
 public class PageBean implements Serializable {
-	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	
 	
 	private String page;
 
@@ -28,12 +23,19 @@ public class PageBean implements Serializable {
 	}
 	
 	public String go_to(){
+		
 		if("a".equals(page)) {
+			
 			return "page_a";
+			
 		}else if("b".equals(page)) {
+			
 			return "page_b";
+			
 		}else {
+			
 			return null;
+			
 		}
 			
 	}
