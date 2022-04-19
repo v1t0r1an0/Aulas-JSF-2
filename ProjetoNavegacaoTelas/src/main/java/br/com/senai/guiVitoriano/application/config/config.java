@@ -8,5 +8,7 @@ import javax.faces.annotation.FacesConfig.Version;
 @ApplicationScoped
 
 public class config {
-
+	
+	
+	
 }
