@@ -7,6 +7,8 @@ import javax.faces.context.Flash;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.senai.guiVitoriano.model.Linguagem;
+
 @Named("cadastro")
 @RequestScoped
 @SuppressWarnings("serial")
@@ -21,6 +23,12 @@ public class CadastroBean implements Serializable{
 	private Boolean receberEmails;
 	private String observacoes;
 	private Integer[] linguagens;
+	
+	public Linguagem[] getListaLinguagens() {
+		
+		return Linguagem.LINGUAGENS;
+		
+	}
 	
 	public String getNome() {
 		
