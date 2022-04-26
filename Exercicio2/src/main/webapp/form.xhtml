@@ -9,17 +9,17 @@
 
 	<h:head>
 		<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
-		<title>SOMAR</title>
+		<title>INVERTER</title>
 	</h:head>
 
 	<body>
 	
 		<h:form>
 		
-			Valor 01: <h:inputText value = "#{pageBean.valor01}"/><br></br>
-			Valor 02: <h:inputText value = "#{pageBean.valor02}"/><br></br>
-			Valor 03: <h:inputText value = "#{pageBean.valor03}"/><br></br>
-			<h:commandButton value = "SOMAR" action = "#{pageBean.somar}"/>
+			Insira um texto qualquer: <h:inputText value = "#{pageBean.texto}"/><br></br>
+			<h:commandButton value = "INVERTER" action = "#{pageBean.inverter}"/>
+			
+			<h:inputTextarea value = "#{pageBean.texto}"></h:inputTextarea>
 		
 		</h:form>
 	
