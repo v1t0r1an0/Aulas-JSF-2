@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
+	<h:head>
+		<meta http-equi= "content-Type" content="text/html; charset=ISO-8859-1"/>
+		<title>CADASTRO</title>
+	</h:head>
+	
+	
+	<body>
+		<h:form>
+			<h:panelGrid columns = "2">
+				<f:facet name = "header">
+					CADASTRO DE USUÁRIO
+				</f:facet>
+				Nome:<h:inputText value = "#{cadastro.nome}"/><br></br>
+				
+				E-mail:<h:inputText value = "#{cadastro.email}"/><br></br>
+				
+				Senha:<h:inputText value = "#{cadastro.senha1}"/><br></br>
+				
+				Confirmação de Senha:<h:inputText value = "#{cadastro.senha2}"/><br></br>
+				
+				Sexo:<br></br>
+				
+					<h:selectOneRadio>
+						<f:selectItem itemValue = "F" itemLabel = "Feminino"/><br></br>
+						<f:selectItem itemValue = "M" itemLabel = "Masculino"/>
+					</h:selectOneRadio><br></br>
+					
+				Deseja Receber E-mails?<br></br>
+				<h:selectBooleanCheckbox value = "#{cadastro.receberEmails}"/><br></br>
+				
+				Observações:<br></br>
+				<h:inputTextarea value = "#{cadastro.observacoes}" rows = "4" cols = "30"/><br></br>
+				
+				Linguagens de Programação:<br></br>
+					<h:selectManyCheckbox value = "#{cadastro.linguagens}">
+						<f:selectItems value = "#{cadastro.listaLinguagens}" var = "l" itemValue = "#{l.id}" itemLabel = "#{l.nome}"/>
+					</h:selectManyCheckbox>
+				
+			</h:panelGrid>
+			
+			<h:commandButton value = "Cadastrar" action = "info"/>
+		</h:form>
+	</body>
+	
+</html>
