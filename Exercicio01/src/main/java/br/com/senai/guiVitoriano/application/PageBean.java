@@ -18,13 +18,13 @@ public class PageBean implements Serializable{
 	@Inject
 	private Flash flash;
 	
-	public Integer somar() {
+	public String somar() {
 		
 		Integer resultado = valor01 + valor02 + valor03;
 		
 		flash.put("resul", resultado);
 		
-		
+		return "result?faces-redirect=true";
 		
 	}
 

@@ -8,7 +8,7 @@ import javax.inject.Named;
 
 @SuppressWarnings("serial")
 @Named
-@RequestScoped 
+@RequestScoped
 
 public class PageBean implements Serializable {
 	
