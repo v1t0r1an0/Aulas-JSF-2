@@ -6,14 +6,45 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:jsf="http://xmlns.jcp.org/jsf"
 	lang="pt-br">
-<h:head>
-<meta http-equi= "content-Type" content="text/html; charset=ISO-8859-1"/>
-<title>INFORMAÇÕES</title>
-</h:head>
+	<h:head>
+	<meta http-equi= "content-Type" content="text/html; charset=ISO-8859-1"/>
+	<title>INFORMAÇÕES</title>
+	</h:head>
 
 
-<body>
-	
-</body>
-	
+	<body>
+		<h:panelGrid columns = "2">
+			<f:facet name = "header">
+				Cadastro de Usuário
+			</f:facet>
+			
+			<h:outputText value = "Nome: " />
+			<h:outputText value = "#{cadastro.nome}" />
+			<br></br>
+			<h:outputText value = "E-Mail: " />
+			<h:outputText value = "#{cadastro.email}" />
+			<br></br>
+			<h:outputText value = "Senha: " />
+			<h:outputText value = "#{cadastro.senha1}" />
+			<br></br>
+			<h:outputText value = "Confirmação de Senha: " />
+			<h:outputText value = "#{cadastro.senha2}" />
+			<br></br>
+			<h:outputText value = "Sexo: " />
+			<!-- rendered -> Vai mostrar na tela caso a condição seja verdadeira ou falsa -->
+			<h:outputText value = "Masculino" rendered = "#{cadastro.sexo == 'M'}"/>
+			<h:outputText value = "Feminino" rendered = "#{cadastro.sexo == 'F'}"/>
+			<br></br>
+			<h:outputText value = "Deseja receber E-Mail: " />
+			<h:outputText value = "SIM" rendered = "#{cadastro.receberEmails}"/>
+			<h:outputText value = "NÃO" rendered = "#{!cadastro.receberEmails}"/>
+			<br></br>
+			<h:outputText value = "Oservações: " />
+			<h:outputText value = "#{cadastro.observacoes}" />
+			<br></br>
+			<h:outputText value = "Linguagem de Programação: " />
+			<h:outputText value = "#{cadastro.linguagensAsString}" />
+			
+		</h:panelGrid>
+	</body>
 </html>
