@@ -5,8 +5,9 @@ public class Linguagem {
 	private Integer id;
 	private String  nome;
 	
-	public static final Linguagem[] LINGUAGENS; //Constante
+	public static final Linguagem[] LINGUAGENS; //Constante -> modificador final cria uma constante - sempre utiliza-se letra maiúscula
 	
+	//static -> o static inicia na primeira chamada da classe Linguagem
 	static {
 		
 		LINGUAGENS = new Linguagem[5];
@@ -16,6 +17,13 @@ public class Linguagem {
 		LINGUAGENS[2] = new Linguagem(3, "C++");
 		LINGUAGENS[3] = new Linguagem(4, "C#");
 		LINGUAGENS[4] = new Linguagem(5, "PHP");
+		
+	}
+	
+	public Linguagem(Integer id, String nome) {
+		
+		this.id = id;
+		this.nome = nome;
 		
 	}
 	
