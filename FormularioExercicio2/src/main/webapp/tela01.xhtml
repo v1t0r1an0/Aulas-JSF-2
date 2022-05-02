@@ -1,10 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	lang="pt-br">
 
-</body>
+	<h:head>
+		<meta http-equi="Content=Type" content="text/html; charset=ISO-8859-1"/>
+		<title>01</title>
+	</h:head>
+	
+	<body>
+		<h:form>
+			<h1>DADOS PESSOAIS</h1><br></br>
+			<h:inputText value = "#{CadastroBean.nome}"/><br></br>
+			<h:inputText value = "#{CadastroBean.email}"/><br></br>
+			<h:inputText value = "#{CadastroBean.dataN}"/><br></br>
+			<h:inputText value = "#{CadastroBean.rua}"/><br></br>
+			<h:inputText value = "#{CadastroBean.numero}"/><br></br>
+			<h:inputText value = "#{CadastroBean.complemento}"/><br></br>
+			<h:inputText value = "#{CadastroBean.bairro}"/><br></br>
+			<h:inputText value = "#{CadastroBean.cep}"/><br></br>
+			<h:inputText value = "#{CadastroBean.cidade}"/><br></br>
+			
+			<h:selectManyCheckbox>
+				<f:selectItems value = "AC" itemLabel="AC - Acre"/>
+				<f:selectItems value = "AL" itemLabel="AL - Alagoas"/>
+				<f:selectItems value = "AP" itemLabel="AP - Amapá"/>
+				<f:selectItems value = "AM" itemLabel="AM - Amazonas"/>
+				<f:selectItems value = "BA" itemLabel="BA - Bahia"/>
+				<f:selectItems value = "CE" itemLabel="CE - Ceará"/>
+				<f:selectItems value = "ES" itemLabel="ES - Espirito Santo"/>
+				<f:selectItems value = "GO" itemLabel="GO - Goiás"/>
+				<f:selectItems value = "MA" itemLabel="MA - Maranhão"/>
+				<f:selectItems value = "MT" itemLabel="MT - Mato Grosso"/>
+				<f:selectItems value = "MS" itemLabel="MS - Mato Grosso do Sul"/>
+				<f:selectItems value = "MG" itemLabel="MG - Minas Gerais"/>
+				<f:selectItems value = "PA" itemLabel="PA - Pará"/>
+				<f:selectItems value = "PB" itemLabel="PB - Paraíba"/>
+				<f:selectItems value = "PR" itemLabel="PR - Paraná"/>
+				<f:selectItems value = "PE" itemLabel="PE - Pernambuco"/>
+				<f:selectItems value = "PI" itemLabel="PI - Piauí"/>
+				<f:selectItems value = "RJ" itemLabel="RJ - Rio De Janeiro"/>
+				<f:selectItems value = "RN" itemLabel="RN - Rio Grande do Norte"/>
+				<f:selectItems value = "RS" itemLabel="RS - Rio Grande do Sul"/>
+				<f:selectItems value = "RO" itemLabel="RO - Rondônia"/>
+				<f:selectItems value = "RR" itemLabel="RR - Roraima"/>
+				<f:selectItems value = "SC" itemLabel="SC - Santa Catarina"/>
+				<f:selectItems value = "SP" itemLabel="SP - São Paulo"/>
+				<f:selectItems value = "SE" itemLabel="SE - Sergipe"/>
+				<f:selectItems value = "TO" itemLabel="TO - Tocantins"/>
+				<f:selectItems value = "DF" itemLabel="DF - Distrito Federal"/>
+			</h:selectManyCheckbox>
+		</h:form>
+	</body>
 </html>
